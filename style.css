@@ -1,8 +1,30 @@
 *{
     font-family: "Cabin", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-
-body {
+ 
+header,
+main {
     background-color: black;
     color: white;
+}
+
+main {
+    height: 100vh;
+}
+
+div.grid {
+    width: 750px;
+    height: 750px;
+    border: 2px solid white;
+}
+
+div.grid div.square {
+    width: calc(100% / 10);
+    height: calc(100% / 10);
+    border: 2px solid white;
+    cursor: crosshair;
+}
+
+div.grid div.square.clicked {
+    background-color: #7fffd4;
 }
